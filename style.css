@@ -1,62 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: mediumspringgreen;
+  border: 4px solid green;
+  height: 1060px;
 }
 
 .flex {
   display: flex;
 }
 
-.column {
-  flex-direction: row;
-  height: 1000px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 .row {
-  /**align-items: stretch;
+  padding: 1%;
+  gap: 1%;
   flex-direction: row;
-  justify-content: space-evenly;**/
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.row.two {
-  /**align-items: stretch;**/
+.flex.center {
+  height: 49%;
+  width: 49.5%;
+  flex-grow: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
 }
 
 /* this selector selects all divs inside of .flex-container */
-.column > div {
-  background: peachpuff;
-  border: 4px solid brown;
-  flex-grow: 0;
-  margin: auto;
+.first > div {
+  height: 24%;
 }
 
-.column > .one {
-  height: 100px;
+.first > .one {
+  background-color: powderblue;
+  border: 4px solid blue;
   width: 100%;
-}
-
-.column > .two {
-  height: 150px;
-  flex-basis: 0;
-  flex-grow: 2;
-}
-
-.column > .three, .column > .four {
-  flex-basis: 0;
-  height: 75px;
   flex-grow: 1;
 }
 
-.column > .five {
-  width: 100%;
-  height: 75px;
+.row > .two.second {
+  background-color: pink;
+  border: 4px solid brown;
+  height: 49%;
+  width: 49.5%;
+  flex-grow: 0;
 }
 
-.row > div {
-  background: teal;
-  border: 2px solid blue;
+.center > .third {
+  background-color: pink;
+  border: 4px solid brown;
+  flex-basis: 48%;
+  width: 100%;
   flex-grow: 0;
-  flex-basis: 25%;
+}
+
+.row > .five {
+  background-color: powderblue;
+  border: 4px solid blue;
+  width: 100%;
+}
+
+.first > .one {
+  padding: 1.5%;
+  flex-direction: row;
   justify-content: space-evenly;
+}
+
+.one > .third, .five > .third.two, .five > .third.three {
+  background: peachpuff;
+  border: 4px solid brown;
+  flex-grow: 1;
+}
+
+.five {
+  padding: 12px;
+  gap: 8px;
+  justify-content: space-around;
+}
+
+.five > .third {
+  background-color: lavender;
+  border: 4px solid blueviolet;
+  flex-grow: 2;
+}
+
+.second.one > .two {
+  padding: 8px;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0%;
+}
+
+.fourth {
+  background-color: pink;
+  border: 4px solid red;
+  flex-basis: 49%;
 }

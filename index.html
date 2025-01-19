@@ -8,19 +8,26 @@
     <title>Flexbox Layout Mode Demo</title>
   </head>
   <body>
-    <div class="flex column">
-      <div class="one flex row"> 
-        <!--<div class="one"></div>
-        <div class="flex row">
-          <div class="one"></div>
-          <div class="two"></div>
-        </div>
-        <div class="three"></div>-->
+    <div class="first flex row">
+      <div class="second one flex row"> 
+          <div class="third one"></div>
+          <div class="third two flex row">
+            <div class="fourth one"></div>
+            <div class="fourth two"></div>
+          </div>
+          <div class="third three"></div>
       </div>
-      <div class="two"></div>
-      <div class="three"></div>
-      <div class="four"></div>
-      <div class="five"></div>
+      <div class="second two"></div>
+      <div class="second flex center">
+        <div class="third three"></div>
+        <div class="third four"></div>
+      </div>
+      <div class="second five flex row">
+          <div class="third one"></div>
+          <div class="third two"></div>
+          <div class="third three"></div>
+          <div class="third four"></div>
+      </div>
     </div>
   </body>
 </html>
