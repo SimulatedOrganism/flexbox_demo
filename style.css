@@ -29,8 +29,6 @@ body {
   flex-grow: 0;
   flex-direction: column;
   justify-content: space-between;
-  background-color: transparent;
-  border: none;
 }
 
 /* this selector selects all divs inside of .flex-container */
@@ -38,38 +36,29 @@ body {
   height: 24%;
 }
 
-.first > .one {
+.first > .one, .row > .five {
   background-color: powderblue;
   border: 4px solid blue;
   width: 100%;
-  flex-grow: 1;
+}
+
+.row > .two.second, .center > .third {
+  background-color: pink;
+  border: 4px solid brown;
 }
 
 .row > .two.second {
-  background-color: pink;
-  border: 4px solid brown;
   height: 49%;
   width: 49.5%;
-  flex-grow: 0;
 }
 
 .center > .third {
-  background-color: pink;
-  border: 4px solid brown;
   flex-basis: 48%;
-  width: 100%;
-  flex-grow: 0;
-}
-
-.row > .five {
-  background-color: powderblue;
-  border: 4px solid blue;
   width: 100%;
 }
 
 .first > .one {
   padding: 1.5%;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -91,9 +80,12 @@ body {
   flex-grow: 2;
 }
 
+.second.one {
+  padding: 24px;
+}
+
 .second.one > .two {
   padding: 8px;
-  align-items: stretch;
   justify-content: center;
   gap: 0%;
 }
